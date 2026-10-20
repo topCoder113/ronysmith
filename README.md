@@ -2,14 +2,14 @@
 
 <h1 align="center"> GlassFolio ✨ | Dev Portfolio
 <br>
-<a href="https://github.com/AmreshSinha/glassfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AmreshSinha/glassfolio?color=blue"/></a> <a href="https://github.com/AmreshSinha/glassfolio/stargazers"><img src="https://img.shields.io/github/stars/AmreshSinha/glassfolio"></a>
+<a ><img src="https://img.shields.io/github/license/AmreshSinha/glassfolio?color=blue"/></a> <a ><img src="https://img.shields.io/github/stars/AmreshSinha/glassfolio"></a>
 
 </h1>
 
 
 <h2 align="center">
 Made with Pure HTML, CSS and JS<br>
-Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFolio</a>
+Inspired by <a >developerFolio</a>
 </h2>
 
 <div style="display:flex; gap:5px;">
@@ -27,8 +27,8 @@ Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFoli
 
 <p align="center">Change the content in <code>index.html</code> and you are good to go :)</p>
 
-<p align="center">If you want to contribute head over to <a href="https://github.com/AmreshSinha/glassfolio/issues">Issues</a> first ;)</p>
-<p align="center">Feel free to open a <a href="https://github.com/AmreshSinha/glassfolio/issues">Pull Request</a> if you added something new to it!</p>
+<p align="center">If you want to contribute head over to <a >Issues</a> first ;)</p>
+<p align="center">Feel free to open a <a>Pull Request</a> if you added something new to it!</p>
 
 ## Sections
 ✔️ Summary and About me\
@@ -37,7 +37,6 @@ Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFoli
 ✔️ Open Source Projects Connected with Github\
 😃 Feel Free to contribute ;)
 
-Live Version: https://AmreshSinha.github.io/glassFolio/
 
 ## Linking your github repo
 This project utilises the modified version of <a href="https://github.com/Tarptaeya/repo-card">Repo-Card</a> which utilises Github Free API to fetch details.
@@ -52,42 +51,5 @@ Format:
 
 Just change ```username``` and ```repository``` to yours and you are good to go!
 
-## Features
-- GlassMorphic UI
-- Supports FontAwesome
-- Supports <a href="https://github.com/devicons/devicon">DevIcon</a>
-- Supports Iconify
-
-## Author
-
-👤 **Amresh Sinha**
-
-- Github: [@AmreshSinha](https://github.com/AmreshSinha/)
-- LinkedIn: [@AmreshSinha](https://www.linkedin.com/in/amresh-sinha/)
-- Portfolio: [amreshsinha.vercel.app](https://amreshsinha.vercel.app/)
-
-## 🤝 Contributing
-
-Your awesome contribution will make this project better, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AmreshSinha/glassFolio/issues).
 
 
-## 📝 License
-
-This project is under [MIT License](https://github.com/AmreshSinha/glassFolio/blob/main/LICENSE).
-
-## Special mentions
-- <a href="https://github.com/saadpasta/developerFolio/">hsaadpasta/developerFolio</a>
-- <a href="https://github.com/Tarptaeya/repo-card">Tarptaeya/repo-card</a>
-
-
-## Project Contributors⭐ 
-
-<table align="center">
-<tr>
-<td>
-<a href="https://github.com/AmreshSinha/glassFolio/graphs/contributors" align="center">
-  <img src="https://contrib.rocks/image?repo=AmreshSinha/glassFolio" /> 
-</a>
-</td>
-</tr>
-</table>
