@@ -37,7 +37,6 @@ Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFoli
 ✔️ Open Source Projects Connected with Github\
 😃 Feel Free to contribute ;)
 
-Live Version: https://AmreshSinha.github.io/glassFolio/
 
 ## Linking your github repo
 This project utilises the modified version of <a href="https://github.com/Tarptaeya/repo-card">Repo-Card</a> which utilises Github Free API to fetch details.
@@ -60,11 +59,6 @@ Just change ```username``` and ```repository``` to yours and you are good to go!
 
 ## Author
 
-👤 **Amresh Sinha**
-
-- Github: [@AmreshSinha](https://github.com/AmreshSinha/)
-- LinkedIn: [@AmreshSinha](https://www.linkedin.com/in/amresh-sinha/)
-- Portfolio: [amreshsinha.vercel.app](https://amreshsinha.vercel.app/)
 
 ## 🤝 Contributing
 
