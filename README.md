@@ -14,12 +14,12 @@ Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFoli
 
 <div style="display:flex; gap:5px;">
     <div style="display: inline-block;">
-        <img width="50%" src="assets/website-screen1.png"/><img width="50%" src="assets/website-screen3.png"/>
+        <img width="100%" src="assets/website-screen1.png"/><img width="100%" src="assets/website-screen3.png"/>
     </div>
 </div>
 <div style="display:flex; gap:5px;">
     <div style="display: inline-block;">
-        <img width="50%" src="assets/website-screen2.png"/><img width="50%" src="assets/website-screen4.png"/>
+        <img width="100%" src="assets/website-screen2.png"/><img width="100%" src="assets/website-screen4.png"/>
     </div>
 </div>
 
