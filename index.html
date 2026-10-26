@@ -1,617 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Glassmorphism</title>
+<!-- 
 
-    <!-- Favicons -->
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/site.webmanifest" />
+██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
+██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
+╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
+░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
+░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
+░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
+░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
+░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
+░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
+██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
+╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
+What are you doing here?! you sneaky developer...
+-->
 
-    <meta name="author" content="AmreshSinha" />
-    <meta
-      name="description"
-      content="Developer Portfolio centered around GlassMorphic UI"
-    />
-    <meta
-      name="keywords"
-      content="Developer, Portfolio, HTML, CSS, JS, GlassMorphic, Glassmorphic, GlassMorphism, Glassmorphism, UI"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000" />
+  <meta property="og:image" content="https://v1.vinodjangid.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Vinod Jangid | Portfolio" />
+  <meta property="og:url" content="https://v1.vinodjangid.site" />
+  <meta property="og:site_name" content="Vinod Jangid Portfolio" />
+  <title>Vinod Jangid | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="canonical" href="https://AmreshSinha.github.io/glassFolio/" />
+<body class="body has-announcement">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
 
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./assets/js/all.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-    <script src="./assets/js/repo-card.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!--Animation-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- <div id="progress">
-      <span id="progress-value"></span>
-    </div> -->
+  <!-- announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-content">
+      <span class="announcement-emoji">🚀</span>
+      <span class="announcement-text">
+       Hello, Weolcom to my portpolio
+         <!-- <a href="https://vinodjangid.site" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          vinodjangid.site<svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a> -->
+      </span> 
+    </div>
+  </div>
 
-    <section>
-      <div class="container">
-        <div id="top" class="page-scroll"></div>
-        <!-- Navbar -->
-        <header>
-          <a href="#top" class="logo">Rony</a>
-          <ul>
-            <li><a class="active page" href="#top" id="home-btn">Home</a></li>
-            <li><a href="#about" class="page" id="about-btn">About Me</a></li>
-            <li><a href="#experience" class="page"id="experience-btn">Experience</a></li>
-            <li><a href="#projects" class="page" id="project-btn">Projects</a></li>
-            <li>
-              <a href="#contact" class="enabledisable page" id="contact-btn"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </header>
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
 
-        <!-- Main Content -->
-        <div class="content">
-          <div class="column">
-            <h2 data-aos="fade-down" data-aos-duration="1000">Hi all, I'm Rony Smith<span class="wave">👋</span></h2>
-            <p data-aos="fade-right" data-aos-duration="1000">
-              I love software development, machine learning and deep learning. I
-              know a little bit of Web Dev too and Flutter! Want to discuss
-              regarding any project or just want to say a Hi? I am always
-              available to listen you :)
-            </p>
-            <a href="#home" data-aos="fade-right" data-aos-duration="1000">Contact Me</a>
-            <a href="#home" data-aos="fade-right" data-aos-duration="1000">Resume</a>
-          </div>
-          <div class="img">
-            <img
-              src="./assets/Vector 10.png"
-              class="shape"
-              style="top: 5rem; right: 15rem"
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img
-              src="./assets/Vector 11.png"
-              class="shape"
-              style="height: 8rem; width: 8rem; top: 8rem; right: 20rem"
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img
-              src="./assets/Vector 16.png"
-              class="shape"
-              style="height: 8rem; width: 8rem; top: 8rem; right: 15rem"
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img
-              src="./assets/Vector 10.png"
-              class="shape"
-              style="z-index: 1; top: 23rem; right: 9rem"
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img
-              src="./assets/Vector 27.png"
-              class="shape"
-              style="
-                z-index: 1;
-                height: 8rem;
-                width: 8rem;
-                top: 25rem;
-                right: 13rem;
-              "
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img
-              src="./assets/Vector 11.png"
-              class="shape"
-              style="
-                z-index: 1;
-                height: 4rem;
-                width: 4rem;
-                top: 26rem;
-                right: 9rem;
-              "
-              alt="Vector 10"
-              data-aos="fade-up-right" data-aos-duration="1000"
-            />
-            <img src="./assets/APS-OCTOCAT.png" alt="APS-OCTOCAT" data-aos="fade-up-right" data-aos-duration="1000"/>
-          </div>
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
         </div>
-
-        <!-- 2nd Section -->
-        <div id="about" class="content page-scroll" style="justify-content: space-around">
-          <div class="img" data-aos="fade-right" data-aos-duration="1000">
-            <!-- https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/giphy.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=giphy.gif&ct=s -->
-            <img
-              src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s"
-              alt="APS-OCTOCAT"
-            />
-          </div>
-          <div class="column-2">
-            <svg
-              xmlns="//www.w3.org/2000/svg"
-              version="1.1"
-              class="svg-filters"
-              style="display: none"
-            >
-              <defs>
-                <filter id="marker-shape">
-                  <feTurbulence
-                    type="fractalNoise"
-                    baseFrequency="0 0.15"
-                    numOctaves="1"
-                    result="warp"
-                  />
-                  <feDisplacementMap
-                    xChannelSelector="R"
-                    yChannelSelector="G"
-                    scale="30"
-                    in="SourceGraphic"
-                    in2="warp"
-                  />
-                </filter>
-              </defs>
-            </svg>
-            <h2 style="font-weight: 550">
-              <span class="low-highlight-pink">What I do</span>
-            </h2>
-            <h3 style="font-size: 24px; color: #444444; font-weight: 1">
-              I love all aspects of technology and want to explore as much as I
-              can!
-            </h3>
-            <div class="dev-icons">
-              <ul>
-                <li class="software-skill-inline c">
-                  <i class="devicon-c-plain"></i>
-                  <p>C</p>
-                </li>
-                <li class="software-skill-inline cplusplus">
-                  <i class="devicon-cplusplus-plain"></i>
-                  <p>C++</p>
-                </li>
-                <li class="software-skill-inline html5">
-                  <i class="devicon-html5-plain"></i>
-                  <p>HTML5</p>
-                </li>
-                <li class="software-skill-inline css3">
-                  <i class="devicon-css3-plain"></i>
-                  <p>CSS3</p>
-                </li>
-                <li class="software-skill-inline javascript">
-                  <i class="devicon-javascript-plain"></i>
-                  <p>JavaScript</p>
-                </li>
-                <li class="software-skill-inline python">
-                  <i class="devicon-python-plain"></i>
-                  <p>Python</p>
-                </li>
-                <li class="software-skill-inline flask">
-                  <i class="devicon-flask-plain"></i>
-                  <p>Flask</p>
-                </li>
-                <li class="software-skill-inline linux">
-                  <i class="devicon-linux-plain"></i>
-                  <p>Linux</p>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p style="color: #444444; font-size: 20px">
-                <img
-                  alt="⚡"
-                  draggable="false"
-                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
-                  style="
-                    height: 1em;
-                    width: 1em;
-                    margin: 0px 0.05em 0px 0.1em;
-                    vertical-align: -0.1em;
-                  "
-                />
-                Develop highly interactive Front end / User Interfaces for your
-                web and mobile applications
-              </p>
-              <p style="color: #444444; font-size: 20px">
-                <img
-                  alt="⚡"
-                  draggable="false"
-                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
-                  style="
-                    height: 1em;
-                    width: 1em;
-                    margin: 0px 0.05em 0px 0.1em;
-                    vertical-align: -0.1em;
-                  "
-                />
-                Develop highly interactive Front end / User Interfaces for your
-                web and mobile applications
-              </p>
-              <p style="color: #444444; font-size: 20px">
-                <img
-                  alt="⚡"
-                  draggable="false"
-                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
-                  style="
-                    height: 1em;
-                    width: 1em;
-                    margin: 0px 0.05em 0px 0.1em;
-                    vertical-align: -0.1em;
-                  "
-                />
-                Develop highly interactive Front end / User Interfaces for your
-                web and mobile applications
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3rd Section -->
-        <h2
-          data-aos="fade-down" data-aos-duration="1500"
-          id="experience"
-          class="mob-h2 page-scroll"
-          style="font-size: 56px; font-weight: 700; margin-top: 50px; text-align:center;"
-        >
-          <span class="low-highlight-skin">Experience</span>
-        </h2>
-        <div style="display: flex;" class="experience-cards-div">
-          <div class="experience-card" data-aos="fade-right" data-aos-duration="1500">
-            <div class="experience-banner" style="background: #444941">
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <svg
-                  alt="Google"
-                  class="logo-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 86 28"
-                >
-                  <path
-                    fill="#4285F4"
-                    d="M10.4,21C4.7,21,0,16.2,0,10.5S4.7,0,10.4,0c3.1,0,5.3,1.3,7,2.9l-1.9,2c-1.2-1.2-2.8-2-5-2
-                    c-4.1,0-7.3,3.4-7.3,7.6s3.2,7.6,7.3,7.6c2.7,0,4.2-1.1,5.1-2.1c0.8-0.8,1.3-2,1.5-3.8h-6.6V9.3h9.3c0.1,0.5,0.2,1.1,0.2,1.8
-                    c0,2.2-0.5,5-2.4,6.9C15.7,20,13.4,21,10.4,21z"
-                  ></path>
-                  <path
-                    fill="#EA4335"
-                    d="M34.2,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S34.2,10.2,34.2,14.1z M31.4,14.1
-                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C29.6,18.2,31.4,16.5,31.4,14.1z"
-                  ></path>
-                  <path
-                    fill="#FBBC03"
-                    d="M48.4,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S48.4,10.2,48.4,14.1z M45.5,14.1
-                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C43.8,18.2,45.5,16.5,45.5,14.1z"
-                  ></path>
-                  <path
-                    fill="#4285F4"
-                    d="M61.7,7.8V20c0,5-2.7,7-6.1,7c-3.2,0-5-2.2-5.8-4l2.5-1.1c0.4,1.1,1.5,2.4,3.3,2.4c2.1,0,3.4-1.4,3.4-3.9v-1
-                    h-0.1c-0.6,0.8-1.8,1.6-3.4,1.6c-3.3,0-6.2-2.9-6.2-6.8s2.9-6.7,6.2-6.7c1.6,0,2.7,0.7,3.4,1.6h0.1V7.8H61.7z M59.2,14.1
-                    c0-2.4-1.5-4.1-3.5-4.1c-1.9,0-3.5,1.7-3.5,4.1s1.5,4.1,3.5,4.1C57.7,18.2,59.2,16.5,59.2,14.1z"
-                  ></path>
-                  <path fill="#34A853" d="M66.4,1.1v19.8h-2.8V1.1H66.4z"></path>
-                  <path
-                    fill="#EA4335"
-                    d="M77.7,16.3l2.2,1.6c-0.7,1.1-2.5,3-5.5,3c-3.7,0-6.5-2.9-6.5-6.7c0-4,2.8-6.7,6.2-6.7c3.4,0,5,2.8,5.6,4.3
-                    l0.3,0.7l-8.8,3.7c0.7,1.4,1.7,2,3.2,2S76.9,17.5,77.7,16.3z M70.8,14l5.8-2.5c-0.4-0.8-1.3-1.5-2.4-1.5C72.7,10,70.7,11.3,70.8,14
-                    z"
-                  ></path>
-                </svg>
-              </div>
-              <img
-                crossorigin="anonymous"
-                class="experience-roundedimg"
-                src="./assets/google.png"
-                alt="Facebook"
-              />
-            </div>
-            <div class="experience-text-details">
-              <h5 class="experience-text-role">Software Engineer</h5>
-              <h5 class="experience-text-date">June 2019 – Present</h5>
-              <p class="subTitle experience-text-desc">
-                I am web and AI intergration developer
-              </p>
-            </div>
-          </div>
-          <div class="experience-card" data-aos="fade-right" data-aos-duration="2000">
-            <div
-              class="experience-banner"
-              style="background: rgb(151, 188, 230)"
-            >
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <svg
-                  viewBox="0 0 62.488 12.094"
-                  width="144.672"
-                  height="28"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    transform="matrix(0.076238, 0, 0, 0.076238, -9.869545, -16.954924)"
-                  >
-                    <path
-                      class="cls-1"
-                      d="M 193.587 247.245 C 183.937 247.245 181.147 251.525 181.147 260.965 L 181.147 276.625 L 206.887 276.625 L 204.307 301.925 L 181.157 301.925 L 181.157 378.705 L 150.267 378.705 L 150.267 301.925 L 129.457 301.925 L 129.457 276.625 L 150.267 276.625 L 150.267 261.395 C 150.267 235.875 160.557 222.395 189.267 222.395 C 195.283 222.381 201.295 222.738 207.267 223.465 L 207.267 247.275 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 209.027 324.445 C 209.027 295.925 222.537 274.445 250.847 274.445 C 266.287 274.445 275.717 282.385 280.227 292.245 L 280.227 276.625 L 309.817 276.625 L 309.817 378.705 L 280.227 378.705 L 280.227 363.265 C 275.937 373.135 266.287 380.855 250.847 380.855 C 222.537 380.855 209.027 359.405 209.027 330.855 Z M 239.907 331.315 C 239.907 346.535 245.477 356.615 259.847 356.615 C 272.507 356.615 278.937 347.395 278.937 332.815 L 278.937 322.565 C 278.937 307.985 272.507 298.765 259.847 298.765 C 245.477 298.765 239.907 308.845 239.907 324.065 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 374.157 274.475 C 386.157 274.475 397.527 277.055 403.747 281.335 L 396.887 303.215 C 390.453 300.151 383.423 298.539 376.297 298.495 C 359.567 298.495 352.297 308.145 352.297 324.665 L 352.297 330.665 C 352.297 347.185 359.587 356.835 376.297 356.835 C 383.423 356.79 390.453 355.179 396.887 352.115 L 403.747 373.985 C 397.527 378.275 386.167 380.855 374.157 380.855 C 337.907 380.855 321.397 361.335 321.397 330.025 L 321.397 325.305 C 321.397 293.995 337.907 274.475 374.157 274.475 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 407.817 331.565 L 407.817 322.565 C 407.817 293.615 424.327 274.565 458.007 274.565 C 489.747 274.565 503.687 293.865 503.687 322.175 L 503.687 338.475 L 438.687 338.475 C 439.337 352.415 445.557 358.635 462.687 358.635 C 474.277 358.635 486.497 356.275 495.507 352.415 L 501.157 373.565 C 493.007 377.865 476.277 381.075 461.487 381.075 C 422.397 381.065 407.817 361.565 407.817 331.565 Z M 438.697 318.265 L 476.017 318.265 L 476.017 315.695 C 476.017 304.545 471.517 295.695 458.017 295.695 C 444.067 295.705 438.697 304.505 438.697 318.225 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 618.157 330.885 C 618.157 359.405 604.437 380.885 576.157 380.885 C 560.717 380.885 549.997 373.165 545.707 363.295 L 545.707 378.735 L 516.547 378.735 L 516.547 225.365 L 547.427 222.565 L 547.427 290.765 C 551.927 281.765 561.797 274.465 576.167 274.465 C 604.477 274.465 618.167 295.915 618.167 324.465 Z M 587.277 323.805 C 587.277 309.435 581.707 298.715 566.907 298.715 C 554.247 298.715 547.387 307.715 547.387 322.305 L 547.387 333.025 C 547.387 347.605 554.247 356.615 566.907 356.615 C 581.707 356.615 587.277 345.895 587.277 331.525 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 628.487 330.235 L 628.487 325.095 C 628.487 295.705 645.217 274.475 679.317 274.475 C 713.417 274.475 730.157 295.705 730.157 325.095 L 730.157 330.235 C 730.157 359.615 713.427 380.855 679.327 380.855 C 645.227 380.855 628.487 359.615 628.487 330.235 Z M 699.267 322.945 C 699.267 309.435 693.687 298.715 679.267 298.715 C 664.847 298.715 659.317 309.435 659.317 322.945 L 659.317 332.385 C 659.317 345.895 664.897 356.615 679.267 356.615 C 693.637 356.615 699.267 345.895 699.267 332.385 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 740.427 330.235 L 740.427 325.095 C 740.427 295.705 757.157 274.475 791.257 274.475 C 825.357 274.475 842.087 295.705 842.087 325.095 L 842.087 330.235 C 842.087 359.615 825.357 380.855 791.257 380.855 C 757.157 380.855 740.427 359.615 740.427 330.235 Z M 811.207 322.945 C 811.207 309.435 805.627 298.715 791.257 298.715 C 776.887 298.715 771.317 309.435 771.317 322.945 L 771.317 332.385 C 771.317 345.895 776.887 356.615 791.257 356.615 C 805.627 356.615 811.207 345.895 811.207 332.385 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                    <path
-                      class="cls-1"
-                      d="M 884.547 325.305 L 914.997 276.625 L 947.807 276.625 L 915.857 327.025 L 949.097 378.705 L 916.287 378.705 L 884.547 328.705 L 884.547 378.705 L 853.657 378.705 L 853.657 225.365 L 884.547 222.565 Z"
-                      style="fill: rgb(255, 255, 255)"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <img
-                crossorigin="anonymous"
-                class="experience-roundedimg"
-                src="./assets/facebookLogo.png"
-                alt="Facebook"
-              />
-            </div>
-            <div class="experience-text-details">
-              <h5 class="experience-text-role">Software Engineer</h5>
-              <h5 class="experience-text-date">June 2019 – Present</h5>
-              <p class="subTitle experience-text-desc">
-               I am a full-stack developer, specializing in React and Python.
-              </p>
-            </div>
-          </div>
-          <div class="experience-card" data-aos="fade-right" data-aos-duration="2500">
-            <div class="experience-banner" style="background: rgb(219, 175, 175)">
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="103.6"
-                  height="28"
-                  viewBox="0 0 1024 276.742"
-                >
-                  <path
-                    d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z"
-                    fill="#d81f26"
-                  />
-                </svg>
-              </div>
-              <img
-                crossorigin="anonymous"
-                class="experience-roundedimg"
-                src="./assets/netflix.png"
-                alt="Facebook"
-              />
-            </div>
-            <div class="experience-text-details">
-              <h5 class="experience-text-role">Software Engineer</h5>
-              <h5 class="experience-text-date">June 2019 – Present</h5>
-              <p class="subTitle experience-text-desc">
-               I have been rich experience in software development field.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4th Section -->
-        <svg
-          xmlns="//www.w3.org/2000/svg"
-          version="1.1"
-          class="svg-filters"
-          style="display: none"
-        >
-          <defs>
-            <filter id="marker-shape">
-              <feTurbulence
-                type="fractalNoise"
-                baseFrequency="0 0.15"
-                numOctaves="1"
-                result="warp"
-              />
-              <feDisplacementMap
-                xChannelSelector="R"
-                yChannelSelector="G"
-                scale="30"
-                in="SourceGraphic"
-                in2="warp"
-              />
-            </filter>
-          </defs>
-        </svg>
-        <h2
-          id="projects"
-          class="mob-h2 page-scroll"
-          style="font-size: 56px; font-weight: 700; margin-top: 50px"
-        >
-          <span class="low-highlight-cyan">Projects</span>
-        </h2>
-        <div class="projects" data-aos="fade-up" data-aos-duration="1500">
-          <div class="repo-card" data-repo="AmreshSinha/glassFolio"></div>
-          <div class="repo-card" data-repo="AmreshSinha/Covid19-API"></div>
-          <div
-            class="repo-card"
-            data-repo="AmreshSinha/Fake-SpeedTest-Generator"
-          ></div>
-          <div
-            class="repo-card"
-            data-repo="AmreshSinha/Webd-Template-CodingWeekIITG"
-          ></div>
-          <div class="repo-card" data-repo="AmreshSinha/Youtube-UI-Clone"></div>
-        </div>
-
-        <!-- 5th Section -->
-        <!-- <h2 style="font-size:56px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-lightyellow">Achievements</span></h2>
-        <div class="achievement-cards-div">
-
-          <div class="certificate-card">
-            <div class="certificate-image-div">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
-            </div>
-            <div class="certificate-detail-div">
-              <h5 class="card-title">Google Summer of Code</h5>
-              <p class="card-subtitle">Selected in GSOC 2021</p>
-            </div>
-            <div class="certificate-card-footer">
-              <span class="certificate-tag">GSOC</span>
-              <span class="certificate-tag">2021</span>
-              <span class="certificate-tag">Google</span>
-            </div>
-          </div>
-
-          <div class="certificate-card">
-            <div class="certificate-image-div">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
-            </div>
-            <div class="certificate-detail-div">
-              <h5 class="card-title">Google Summer of Code</h5>
-              <p class="card-subtitle">Selected in GSOC 2021</p>
-            </div>
-            <div class="certificate-card-footer">
-              <span class="certificate-tag">GSOC</span>
-              <span class="certificate-tag">2021</span>
-              <span class="certificate-tag">Google</span>
-            </div>
-          </div>
-
-          <div class="certificate-card">
-            <div class="certificate-image-div">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/1200px-GSoC-icon.svg.png" alt="GSOC" class="card-image">
-            </div>
-            <div class="certificate-detail-div">
-              <h5 class="card-title">Google Summer of Code</h5>
-              <p class="card-subtitle">Selected in GSOC 2021</p>
-            </div>
-            <div class="certificate-card-footer">
-              <span class="certificate-tag">GSOC</span>
-              <span class="certificate-tag">2021</span>
-              <span class="certificate-tag">Google</span>
-            </div>
-          </div>
-
-        </div> -->
-
-        <h2  id="contact"
-          class="mob-connect enabledisable page-scroll"
-          style="font-size: 40px; font-weight: 700; margin-top: 50px"
-        >
-          <span class="low-highlight-hazeskin">Connect with me</span>
-        </h2>
-        <ul class="socialsites ">
-          <li>
-            <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
           </li>
         </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
 
-        <!-- Footer -->
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">N</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          <p class="jello">a</p>
+          <p class="jello">s</p>
+          <p class="jello">t</p>
+          <p class="jello">e</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">R</p>
+          <p class="jello">o</p>
+          <p class="jello">n</p>
+          <p class="jello">y</p>
+          &nbsp;
+          <p class="jello">S</p>
+          <p class="jello">m</p>
+          <p class="jello">i</p>
+          <p class="jello">t</p>
+          <p class="jello">h</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+            <p class="jello">s</p>
+            <p class="jello">i</p>
+            <p class="jello">g</p>
+            <p class="jello">n</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">c</p>
+            <p class="jello">o</p>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+          </div>
+          <div>
+            <p class="jello">and</p>
+          </div>
+           <div>
+            <p class="jello">A</p>
+            <p class="jello">I</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Web Developer with experience of Frontend and Backend Web
+          Designs and AI intergration. I Love fun Web UI, collaboration and making products.<br />
+          <br />
+          I deliver clean, maintainable code, communicate clearly, and focus on creating reliable software that helps clients achieve their goals.
+        </p>
+        <div class="contact-btn-div">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let 's see!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Hi! My name is Rony Smith. I'm a web and AI full-stack developer. I love creating things that exist on the internet. 
+              My interest in web development started in 2019 when I graduated Computer techinque of college with top-tier academic results.
+            </p>
+            <br />
+            <p tabindex="0">
+             I build responsive, production-ready applications using technologies including React, JavaScript, Node.js, Express, MongoDB, SQL, HTML, CSS, Git/GitHub, Vercel, Render, Cloudinary, Stripe, and other APIs and AI intergra.
+            </p>
+            <br />
+           
+             <!-- Resume button -->
+      <!-- <button class="resume-btn" id="resume-btn" onclick="openURL()"> -->
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+
+        <div class="text">Resume</div>
+      </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/webp/vinod (2).png" alt="Vinod Jangid" tabindex="0" aria-label="image of vinod" />
+          </div>
+        </div>
       </div>
     </section>
-    <div class="button-top-div" id="myDIV">
-      <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/tailwind.png" alt="tailwind skill" class="tech-stack-logo" />
+              <span class="tooltip">TAILWIND</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">REACTJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/nextlogo.png" alt="nextjs skill" class="tech-stack-logo" />
+              <span class="tooltip">NEXTJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/node.png" alt="nodejs skill" class="tech-stack-logo" />
+              <span class="tooltip">NODEJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/astro.png" alt="astro skill" class="tech-stack-logo" />
+              <span class="tooltip">ASTRO</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/mongo.png" alt="tinacms skill" class="tech-stack-logo" />
+              <span class="tooltip">mongo</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/python.jpg" alt="contentful skill" class="tech-stack-logo" />
+              <span class="tooltip">python</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/ailogo.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">AI</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/asher-favicon.webp" alt="atomic asher website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Atomic Asher Official Website</article>
+                <p class="ProjectDescription">
+                  Atomic Asher: A sleek and modern company website built to reflect their mission, team, and work through a clean and professional digital presence.
+                </p>
+                <div class="project-buttons">
+                  <!-- href="https://atomicasher.com" -->
+                  <a  target="_blank" class="cta"
+                    aria-label="Visit atomicasher Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/asher-preview.webp" alt="atomicasher website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/stopscams-favicon.ico" alt="stopscams website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">StopScams.in</article>
+                <p class="ProjectDescription">
+                  StopScams: An AI-powered platform that detects scam messages and supports users through digital fraud with smart tools and real-time help.
+                </p>
+                <div class="project-buttons">
+                  <!-- href="https://stopscams.in" -->
+                  <a  target="_blank" class="cta"
+                    aria-label="Visit stopscams Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/stopscams-preview.webp" alt="stopscams website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/notesync-favicon.ico" alt="notesync website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">NoteSync</article>
+                <p class="ProjectDescription">
+                  Notesync: A note-taking app powered by Supabase, designed to sync and store your notes instantly with a smooth and minimal user interface.
+                </p>
+                <div class="project-buttons">
+                  <!-- href="https://github.com/vinodjangid07/notesync-supabase" -->
+                  <a  target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <!-- href="https://notesync-site.netlify.app/" -->
+                  <a  target="_blank" class="cta"
+                    aria-label="Visit NoteSync Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/notesync-preview.webp" alt="NoteSync website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/wyd-favicon.ico" alt="withyourdog website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">With Your Dog</article>
+                <p class="ProjectDescription">
+                  WithYour.Dog: Discover dog-friendly places near you with our simple Airtable-powered app, integrated with Ola Maps for seamless navigation.
+                </p>
+                <div class="project-buttons">
+                  <!-- href="https://withyour.dog" -->
+                  <a  target="_blank" class="cta"
+                    aria-label="Visit withyourdog Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/wyd-preview.webp" alt="withyourdog website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Pexelicons</article>
+                <p class="ProjectDescription">
+                  Pexelicons: A world of personalized file folder icons to
+                  transform your PC into a reflection of your style.
+                </p>
+                <div class="project-buttons">
+                  <!-- href="https://github.com/vinodjangid07/Pexelicons" -->
+                  <a  target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <!-- href="https://vinodjangid07.github.io/Pexelicons/" -->
+                  <a  target="_blank" class="cta"
+                    aria-label="Visit Pexelicons Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+
+          <!-- --------------------- -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
     </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article>
+        </div>
+        <!-- <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://www.instagram.com/pexel_ui/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a>
 
-    <!-- Page Scroll Percentage -->
-    <script src="./assets/js/script.js"></script>
+            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer=" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
 
-    <!-- Page Scroll Up On Click -->
-    <script>
-      //scroller fixed
-      var scrolBtn = document.querySelector("#myDIV");
-      window.addEventListener("scroll", function () {
-        let offset;
-        offset = window.pageYOffset;
-        if (offset > 300) {
-          scrolBtn.style.display = "block";
-        }
-        if (offset < 300) {
-          scrolBtn.style.display = "none";
-        }
-      });
+            <a href="https://github.com/vinodjangid07" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
 
-      //remove that #s in the link
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
+            <a href="mailto:infovinodjangid@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div> -->
+        <!-- <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div> -->
+        <div class="footer-bottom">
+          <article>
+            Design & Built by Rony Smith
+          </article>
+        </div>s
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-          });
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+    
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
         });
       });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

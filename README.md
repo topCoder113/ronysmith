@@ -1,87 +1,39 @@
-# ❗❗ Check out my current portfolio for a better UI and code: [wink](https://github.com/AmreshSinha/wink)
+# <a href="https://vinodjangid07.github.io/" target="_blank">My Portfolio</a>
+<p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
 
-<h1 align="center"> GlassFolio ✨ | Dev Portfolio
-<br>
-<a href="https://github.com/AmreshSinha/glassfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AmreshSinha/glassfolio?color=blue"/></a> <a href="https://github.com/AmreshSinha/glassfolio/stargazers"><img src="https://img.shields.io/github/stars/AmreshSinha/glassfolio"></a>
+[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
+[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://vinodjangid07.github.io/)
+[![Author](https://img.shields.io/badge/Author-Vinod%20Jangid-purple.svg)](https://www.instagram.com/its_.me._vinod?igshid=YmMyMTA2MsY%3D)
+[![Latest Release](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
+<a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
-</h1>
+<img width="100%" alt="Portfolio Screenshot" src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/fd0d70b2-1505-4adf-8b0c-427df58607e3">
 
 
-<h2 align="center">
-Made with Pure HTML, CSS and JS<br>
-Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFolio</a>
-</h2>
+:star: Star me on GitHub — it helps!
 
-<div style="display:flex; gap:5px;">
-    <div style="display: inline-block;">
-        <img width="100%" src="assets/website-screen1.png"/><img width="100%" src="assets/website-screen3.png"/>
-    </div>
-</div>
-<div style="display:flex; gap:5px;">
-    <div style="display: inline-block;">
-        <img width="100%" src="assets/website-screen2.png"/><img width="100%" src="assets/website-screen4.png"/>
-    </div>
-</div>
+# Sections 📚
 
-<p align="center"><strike>Currently Not Mobile Responsive!</strike> Now it is :)</p>
-
-<p align="center">Change the content in <code>index.html</code> and you are good to go :)</p>
-
-<p align="center">If you want to contribute head over to <a href="https://github.com/AmreshSinha/glassfolio/issues">Issues</a> first ;)</p>
-<p align="center">Feel free to open a <a href="https://github.com/AmreshSinha/glassfolio/issues">Pull Request</a> if you added something new to it!</p>
-
-## Sections
-✔️ Summary and About me\
+✔️ Mini intro\
+✔️ About me \
 ✔️ Skills\
-✔️ Work Experience\
-✔️ Open Source Projects Connected with Github\
-😃 Feel Free to contribute ;)
+✔️ Projects\
+✔️ Contact me
+
+## Installation & Deployment 📦
+- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
+- ⚠️ Remove my Bitmoji <img src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/05e5b2d6-8b38-4cf9-a5a3-eb63e81aab1d" width="20px"> from the navbar/footer and use yours instead.⚠️
+- Add or remove images from `https://www.vinodjangid.me/src/` directory as per your requirement.
+- ⚠️<b>NOTE:</b> Make sure to remove `analyticsId` & `google search console Id` from `<head>` tag, and set yours, if you want to use your own Google Analytics & search console account.⚠️
 
 
-## Linking your github repo
-This project utilises the modified version of <a href="https://github.com/Tarptaeya/repo-card">Repo-Card</a> which utilises Github Free API to fetch details.
+## License 📄
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
-Keep in mind that the Free API is Rate Limited.
-
-Format:
-
-```
-<div class="repo-card" data-repo="username/repository"></div>
-```
-
-Just change ```username``` and ```repository``` to yours and you are good to go!
-
-## Features
-- GlassMorphic UI
-- Supports FontAwesome
-- Supports <a href="https://github.com/devicons/devicon">DevIcon</a>
-- Supports Iconify
-
-## Author
+## Tools Used 🛠️
+* [<b>GitHub</b>](https://github.com/) - To host my static website (HTML, CSS, JS).
+* [<b>Animate on scroll library</b>](https://github.com/michalsnik/aos) - To animate my website while scrolling.
+* [<b>Animista</b>](https://animista.net/) - To use Interactive animations
 
 
-## 🤝 Contributing
-
-Your awesome contribution will make this project better, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AmreshSinha/glassFolio/issues).
-
-
-## 📝 License
-
-This project is under [MIT License](https://github.com/AmreshSinha/glassFolio/blob/main/LICENSE).
-
-## Special mentions
-- <a href="https://github.com/saadpasta/developerFolio/">hsaadpasta/developerFolio</a>
-- <a href="https://github.com/Tarptaeya/repo-card">Tarptaeya/repo-card</a>
-
-
-## Project Contributors⭐ 
-
-<table align="center">
-<tr>
-<td>
-<a href="https://github.com/AmreshSinha/glassFolio/graphs/contributors" align="center">
-  <img src="https://contrib.rocks/image?repo=AmreshSinha/glassFolio" /> 
-</a>
-</td>
-</tr>
-</table>
+Please contact me at infovinodjangid@gmail.com if you have any feedback for the website. :star: Star it, if you like it!
