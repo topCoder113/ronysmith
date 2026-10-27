@@ -7,7 +7,7 @@
 [![Latest Release](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
 <a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
-<img width="100%" alt="Portfolio Screenshot" src="C:\Users\LLL\Desktop\vinodjangid07.github.io\src\png\portfolio">
+<img width="100%" alt="Portfolio Screenshot" src="/src/png/portfolio.png">
 
 :star: Star me on GitHub — it helps!
 
@@ -22,7 +22,7 @@
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> according to your requirement.
 - ⚠️ Remove my Bitmoji <img src="C:\Users\LLL\Desktop\vinodjangid07.github.io\src\png\nav-avatar" width="20px"> from the navbar/footer and use yours instead.⚠️
-- Add or remove images from `https://www.ronysmith.me/src/` directory as per your requirement.
+- Add or remove images from `/src/png/nav-avatar` directory as per your requirement.
 - ⚠️<b>NOTE:</b> Make sure to remove `analyticsId` & `google search console Id` from `<head>` tag, and set yours, if you want to use your own Google Analytics & search console account.⚠️
 
 
