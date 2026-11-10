@@ -9,6 +9,7 @@
 <!-- <a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a> -->
 
 <img width="100%" alt="Portfolio Screenshot" src="/src/png/portfolio.png">
+<img width="100%" alt="Portfolio Screenshot" src="/src/png/portfolio1.png">
 
 :star: Star me on GitHub — it helps!
 
@@ -18,7 +19,6 @@
 ✔️ About me \
 ✔️ Skills\
 ✔️ Projects\
-✔️ Contact me
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> according to your requirement.
