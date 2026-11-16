@@ -1,40 +1,60 @@
-<!-- href="https://vinodjangid07.github.io/" target="_blank" -->
-# <a >My Portfolio</a>
-<p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
+# Rony Smith | Portfolio
 
-<!-- [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
-[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://vinodjangid07.github.io/)
+A responsive, single-page portfolio for Rony Smith, a web and AI developer. It introduces his work, highlights selected client projects, and gives visitors a way to get in touch.
 
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io) -->
-<!-- <a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a> -->
+## What's on the page
 
-<img width="100%" alt="Portfolio Screenshot" src="/src/png/portfolio.png">
-<img width="100%" alt="Portfolio Screenshot" src="/src/png/portfolio1.png">
+- **Home:** introduction, availability, and featured project.
+- **About:** a short profile and photo.
+- **Capabilities:** technologies and tools.
+- **Selected work:** a keyboard-accessible project carousel with links to live sites.
+- **Contact:** a message form and direct email link.
 
-:star: Star me on GitHub — it helps!
+The layout adapts to mobile screens and includes a mobile navigation menu, scroll animations, and a back-to-top button.
 
-# Sections 📚
+## Preview locally
 
-✔️ Mini intro\
-✔️ About me \
-✔️ Skills\
-✔️ Projects\
+This is a static website: there is no package installation, build step, or framework. You can open `index.html` in a browser, or serve the project root locally:
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- ⚠️ Remove my Bitmoji <img src="/src/png/nav-avatar.png" width="20px"> from the navbar/footer and use yours instead.⚠️
-- Add or remove images from `/src/png/nav-avatar` directory as per your requirement.
-- ⚠️<b>NOTE:</b> Make sure to remove `analyticsId` & `google search console Id` from `<head>` tag, and set yours, if you want to use your own Google Analytics & search console account.⚠️
+```bash
+python -m http.server 8000
+```
 
+Then visit [http://localhost:8000](http://localhost:8000). The page loads fonts, AOS, and Swiper from external CDNs, so an internet connection is needed for those features.
 
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+## Project files
 
-## Tools Used 🛠️
-* [<b>GitHub</b>](https://github.com/) - To host my static website (HTML, CSS, JS).
-* [<b>Animate on scroll library</b>] - To animate my website while scrolling.
-<!-- (https://github.com/michalsnik/aos) -->
-* [<b>Animista</b>] - To use Interactive animations
-<!-- (https://animista.net/) -->
+| File or folder | Purpose |
+| --- | --- |
+| `index.html` | Page content, metadata, project cards, contact form, and library setup. |
+| `style.css` | Layout, responsive rules, colors, and component styles. |
+| `main.js` | Mobile menu, active navigation state, and back-to-top behavior. |
+| `src/png/` | Logo and About photos, technology icons, and other PNG assets. |
+| `src/webp/` | Featured-project and project-card images. |
+| `src/svg/`, `src/ico/`, `src/mp3/` | Supporting icons and media. |
 
-Please contact me at ronysmith@gmail.com if you have any feedback for the website. :star: Star it, if you like it!
+## Updating the portfolio
+
+- Edit the text and links in `index.html`.
+- Project cards are inside `#projects`. Keep the Swiper classes (`swiper`, `swiper-wrapper`, and `swiper-slide`) when adding or removing slides.
+- Replace the images in `src/webp/` or `src/png/` as needed, and update each image's `src` and descriptive `alt` text in `index.html`.
+- The site's colors and visual styles are defined in `style.css`.
+- Update the page title, description, social metadata, and favicon in the `<head>` of `index.html` before publishing.
+- The contact form currently submits to FormSubmit at `ronysmith@gmail.com`. Change its `action` URL to use a different inbox, and test the form after deployment.
+
+## Libraries and services
+
+- [AOS](https://michalsnik.github.io/aos/) for scroll-triggered animations.
+- [Swiper](https://swiperjs.com/) for the selected-work carousel.
+- [Google Fonts](https://fonts.google.com/) for DM Sans and Space Grotesk.
+- [FormSubmit](https://formsubmit.co/) for contact-form delivery.
+
+These are loaded from their hosted services; the project does not bundle them locally.
+
+## Deployment
+
+Deploy the repository root to any static web host, such as GitHub Pages. No build command is required. Ensure the host serves `index.html` from the root and preserves the `src/` asset paths. If using a custom domain, update `CNAME` to the domain you control or remove it when it is not needed.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](./LICENSE).
