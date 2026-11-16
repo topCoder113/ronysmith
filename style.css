@@ -2484,6 +2484,7 @@ header {
     gap: 5px;
     padding: 10px 0;
     color: var(--muted);
+    font-weight: 700;
     text-decoration: none;
     transition: color .2s ease
 }
@@ -3349,7 +3350,7 @@ footer {
         color: var(--ink);
         font-family: "DM Sans", sans-serif;
         font-size: 1.6rem;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none
     }
 
